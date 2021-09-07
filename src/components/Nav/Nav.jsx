@@ -1,7 +1,6 @@
 /* Import Libraries */
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-// import LogOutButton from '../LogOutButton/LogOutButton';
+import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 /* Import Styling */
@@ -37,16 +36,6 @@ function Nav() {
     setAnchorEl(null);
   };
 
-  // let loginLinkData = {
-  //   path: '/login',
-  //   text: 'Login',
-  // };
-
-  // if (user.id != null) {
-  //   loginLinkData.path = '/user';
-  //   loginLinkData.text = 'Home';
-  // }
-
   return (
     <>
       {user.id && (
@@ -69,7 +58,6 @@ function Nav() {
               {navList.map((item, index) => (
                 <MenuItem
                   key={item.name}
-                  // disabled={index === 0}
                   selected={index === selectedIndex}
                   onClick={(event) =>
                     handleMenuItemClick(event, index, item.url)

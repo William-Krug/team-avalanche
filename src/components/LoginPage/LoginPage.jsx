@@ -1,26 +1,23 @@
+/* Import Libraries */
 import React from 'react';
+
+/* Import Styling */
+import { Grid } from '@material-ui/core';
+
+/* Import Custom Components */
 import LoginForm from '../LoginForm/LoginForm';
-import { useHistory } from 'react-router-dom';
 
+/**
+ *
+ * @returns
+ */
 function LoginPage() {
-  const history = useHistory();
-
   return (
-    <div>
-      <LoginForm />
-
-      {/* <center>
-        <button
-          type="button"
-          className="btn btn_asLink"
-          onClick={() => {
-            history.push('/registration');
-          }}
-        >
-          Register
-        </button>
-      </center> */}
-    </div>
+    <Grid container justifyContent="center" class="landingPage">
+      <Grid item xs={6}>
+        <LoginForm />
+      </Grid>
+    </Grid>
   );
 }
 

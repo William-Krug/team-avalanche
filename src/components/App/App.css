@@ -7,19 +7,12 @@ body,
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
+  background-color: #800000;
 }
 
 img {
   display: inline-block;
   max-width: 100%;
-}
-
-/* --------------------------------------------------------------------------------
-Container
--------------------------------------------------------------------------------- */
-
-.container {
-  padding: 20px;
 }
 
 /* --------------------------------------------------------------------------------
@@ -101,7 +94,8 @@ Form Treatment
   max-width: 100%;
   padding: 25px;
   margin: 0 auto 20px;
-  background-color: #efefef;
+  /* background-color: #efefef; */
+  background-color: #c9dfe3;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgb(0, 0, 0, 0.4);
 }
