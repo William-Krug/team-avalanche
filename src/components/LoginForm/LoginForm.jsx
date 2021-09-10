@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
  * @returns
  */
 function LoginForm() {
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState('parent');
   const [password, setPassword] = useState('');
   const errors = useSelector((store) => store.errors);
   const dispatch = useDispatch();
@@ -29,15 +29,19 @@ function LoginForm() {
     }
   };
 
+  const setAdmin = () => {
+    setUsername('admin');
+  };
+
   return (
     <form className="formPanel" onSubmit={login}>
-      <h2>Please Login to Continue</h2>
+      <h2 onClick={(event) => setAdmin()}>Please Login to Continue</h2>
       {errors.loginMessage && (
         <h3 className="alert" role="alert">
           {errors.loginMessage}
         </h3>
       )}
-      <div>
+      <div className="hide">
         <label htmlFor="username">
           Username:
           <input

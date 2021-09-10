@@ -14,7 +14,7 @@ import LoginForm from '../LoginForm/LoginForm';
  */
 function LandingPage() {
   return (
-    <Grid container justifyContent="center" class="landingPage">
+    <Grid container justifyContent="center" className="landingPage">
       <Grid item xs={6}>
         <LoginForm />
       </Grid>

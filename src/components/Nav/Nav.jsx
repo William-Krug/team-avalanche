@@ -45,6 +45,7 @@ function Nav() {
               <MenuIcon
                 aria-haspopup="true"
                 aria-controls="lock-menu"
+                className="nav-icon"
                 onClick={handleClickListItem}
               />
             </IconButton>
