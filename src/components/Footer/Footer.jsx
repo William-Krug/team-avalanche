@@ -9,7 +9,7 @@ import './Footer.css';
  * @returns
  */
 function Footer() {
-  return <footer>&copy; New Brighton Mini Mites: Avalanche</footer>;
+  return <footer>&copy; William Krug</footer>;
 }
 
 export default Footer;

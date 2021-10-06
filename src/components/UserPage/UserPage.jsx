@@ -12,11 +12,6 @@ function UserPage() {
   const user = useSelector((store) => store.user);
   return (
     <Box>
-      <Box className="centered">
-        <Typography variant="h1" component="h1">
-          Avalanche
-        </Typography>
-      </Box>
       <Box className="welcome">
         <Typography variant="h5" component="p">
           Welcome to New Brighton Mini Mites Avalanche team photo gallery.
@@ -26,7 +21,7 @@ function UserPage() {
         </Typography>
       </Box>
       <Box className="centered">
-        <Typography variant="h3" component="h2">
+        <Typography variant="h2" component="h1">
           Go Avalanche!!!
         </Typography>
       </Box>
